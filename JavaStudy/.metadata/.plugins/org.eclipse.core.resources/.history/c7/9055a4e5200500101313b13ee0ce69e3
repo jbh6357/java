@@ -1,0 +1,14 @@
+package Model;
+
+public class Player extends MemberDTO{
+
+	public Player() {
+		
+	}
+	
+	
+	public Player(String id, String pw, String name) {
+		super(id, pw, name);
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;배열실습.Ex01배열실습.java&apos; to &apos;Ex01배열실습_가장큰수.java&apos;&#x0D;&#x0A;- Original project: &apos;Ex05배열&apos;&#x0D;&#x0A;- Original element: &apos;배열실습.Ex01배열실습.java&apos;&#x0D;&#x0A;- Renamed element: &apos;배열실습.Ex01배열실습_가장큰수.java&apos;" description="Rename compilation unit &apos;Ex01배열실습.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;배열실습{Ex01배열실습.java" name="Ex01배열실습_가장큰수.java" references="false" stamp="1741309746251" version="1.0"/>
+</session>

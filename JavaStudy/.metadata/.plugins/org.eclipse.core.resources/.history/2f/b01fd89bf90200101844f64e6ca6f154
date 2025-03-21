@@ -1,0 +1,21 @@
+package Model;
+
+public class MemberDTO {
+	// [DTO]
+	// -> Database Transfer Object
+	
+	private String id;
+	private String pw;
+	private String name;
+	private int age;
+	
+	public MemberDTO(String id, String pw, String name, int age) {
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+	
+}

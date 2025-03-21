@@ -1,0 +1,32 @@
+package Model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class MemberDAO {
+	// [DAO]
+	// -> Database Access Object
+	
+	public void getConn() { //DB 접속 메소드		
+		//DB 드라이버 로드
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			//DB연결에 필요한 설정값
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+			String name = "hr";
+			String pw = "hr";
+			
+			Connection conn = DriverManager.getConnection(url, name, pw);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public int join() { //회원가입 쿼리 메소드
+		// DB접근
+		getConn();
+		// DB쿼리문실행
+		return 1;
+	}
+	
+}

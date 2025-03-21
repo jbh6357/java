@@ -1,0 +1,62 @@
+package Model;
+
+public class Player extends MemberDTO {
+
+	private int position = 0; // 현재 위치
+	private int money = 300; // 플레이어의 보유 금액, 300은 초기 지급 금액
+	private final int income = 20; // 한 바퀴 돌 때마다 월급 주기
+	private boolean island = false; // 무인도인지 체크
+	private String color; // 플레이어마다 색상 부여
+	
+	public Player(String id, String pw, String name) {
+		super(id, pw, name);
+	}
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+
+	public int getMoney() {
+		return money;
+	}
+
+	public boolean getIsland() {
+		return island;
+	}
+
+	public void setIsland(boolean island) {
+		this.island = island;
+	}
+
+	public Player() {
+
+	}
+
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
+		
+		if(this.position>23) {
+			this.position = this.position%24;
+			getIncome();
+		}
+	}
+
+	public void getIncome() {
+		System.out.println("\n=================================");
+		System.out.println("월급이 " + income + "만큼 지급되었습니다!");
+		System.out.println("\n=================================");
+		setMoney(getMoney()+income);
+	}
+
+}

@@ -1,0 +1,10 @@
+package Controller;
+
+public class Controller {
+	// [Controller]
+	// 사용자의 요청에 따라서 그에 맞는 DB로직을 실행
+	
+	// 1. DB연결
+	// 2. DB 로직 실행
+	
+}

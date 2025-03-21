@@ -1,0 +1,12 @@
+package Controller;
+
+public class Controller {
+	// [Controller]
+	// 사용자의 요청에 따라서 그에 맞는 DB로직을 실행
+	
+	// 1. DB연결
+	// - DB연결에 대한 정보가 담겨있는 객체 소환
+	
+	// 2. DB로직실행
+	
+}

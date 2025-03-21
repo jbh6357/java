@@ -1,0 +1,27 @@
+package Model;
+
+public class Player extends MemberDTO{
+
+	int money;
+	
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+
+
+	public int getMoney() {
+		return money;
+	}
+
+
+	public Player() {
+		
+	}
+	
+	
+	public Player(String id, String pw, String name) {
+		super(id, pw, name);
+	}
+	
+}

@@ -1,0 +1,18 @@
+package 포켓몬;
+
+import java.util.Scanner;
+
+public class PokemonMain {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// 포켓몬 두마리 생성(Pokemon 클래스를 기반으로 객체 2개 생성)
+		// 피카츄, 전기, 백만볼트, 100, 10
+		// 잠만보, 노말, 잠자기, 130, 7 
+		Pokemon pk1 = new Pokemon(null, null, null, 0, 0);
+		Pokemon pk2 = new Pokemon(null, null, null, 0, 0);
+
+	}
+
+}

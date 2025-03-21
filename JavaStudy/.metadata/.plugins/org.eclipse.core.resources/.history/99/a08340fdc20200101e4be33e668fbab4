@@ -1,0 +1,29 @@
+package test;
+
+import java.util.Scanner;
+
+public class ClearConsole {
+	
+
+	public static void main(String[] args) {
+		System.out.println("Hello, World!"); 
+        
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		if(a==1)
+		{
+			System.out.print("\033[H\033[2J");
+	        System.out.flush();
+	        
+	        System.out.println("콘솔이 초기화되었습니다.");
+		}
+		
+        
+        
+        
+        System.out.println("Console cleared!");
+
+	}
+
+}

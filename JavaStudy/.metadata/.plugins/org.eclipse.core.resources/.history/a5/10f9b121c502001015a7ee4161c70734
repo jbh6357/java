@@ -1,0 +1,26 @@
+package test;
+
+import org.fusesource.jansi.Ansi;
+import org.fusesource.jansi.AnsiConsole;
+
+public class ClearConsole {
+
+	public static void clear() {
+		AnsiConsole.systemInstall();
+		System.out.print(Ansi.ansi().eraseScreen().cursor(1, 1)); // 화면 지우고 커서 이동
+		System.out.flush();
+		AnsiConsole.systemUninstall(); // Jansi 정리
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Hello, World!");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+		} // 2초 대기
+		clear();
+		System.out.println("Console cleared!");
+
+	}
+
+}

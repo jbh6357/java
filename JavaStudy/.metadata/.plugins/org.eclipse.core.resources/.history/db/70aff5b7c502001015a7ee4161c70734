@@ -1,0 +1,17 @@
+package test;
+
+public class ClearConsole {
+
+	public static void clear() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        try { Thread.sleep(2000); } catch (InterruptedException e) {} // 2초 대기
+        clear();
+        System.out.println("Console cleared!");
+    }
+
+}

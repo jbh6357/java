@@ -1,0 +1,12 @@
+package 포켓몬;
+
+public class PokemonMain {
+
+	public static void main(String[] args) {
+		
+		Pokemon pk1 = new Pokemon(null, null, null, 0, 0);
+		Pokemon pk2 = new Pokemon(null, null, null, 0, 0);
+
+	}
+
+}
